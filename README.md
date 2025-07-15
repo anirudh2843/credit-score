@@ -4,24 +4,6 @@ This project develops a machine learning pipeline to assign **credit scores (0�
 The goal is to identify trustworthy, responsible DeFi users and detect risky, bot-like, or exploitative behavior — using only on-chain transaction data.
 
 ---
-
-## 📁 Project Structure
-credit-score/
-├── data/
-│ └── user_transactions.json # Input JSON transaction data
-├── score_output.csv # Final wallet scores
-├── plots/
-│ └── score_distribution.png # Score histogram
-├── src/
-│ ├── features.py # Feature engineering functions
-│ └── scoring.py # Rule-based scoring logic
-├── main.py # Entry point: full pipeline
-├── view_scores.py # Preview score_output.csv
-├── plot_distribution.py # Generate histogram
-├── requirements.txt # All dependencies
-├── README.md # This file
-└── analysis.md # Score distribution analysis
-
 ## 🔍 Problem Statement
 
 Given raw DeFi transaction-level data from Aave V2, assign each wallet a **credit score from 0 to 1000** based on historical behaviors such as:
@@ -57,6 +39,8 @@ Given raw DeFi transaction-level data from Aave V2, assign each wallet a **credi
 
 ---
 
+
+
 ## 🧠 Scoring Logic (Rule-Based Model)
 
 Each wallet is scored based on a combination of risk and reliability indicators:
@@ -69,6 +53,25 @@ Each wallet is scored based on a combination of risk and reliability indicators:
 - ✅ Score is scaled to a range between **0–1000**
 
 This logic ensures reliable users (who borrow responsibly and repay) are rewarded with high scores, while risky/bot wallets score low.
+
+
+
+## 📁 Project Structure
+credit-score/
+├── data/
+│ └── user_transactions.json # Input JSON transaction data
+├── score_output.csv # Final wallet scores
+├── plots/
+│ └── score_distribution.png # Score histogram
+├── src/
+│ ├── features.py # Feature engineering functions
+│ └── scoring.py # Rule-based scoring logic
+├── main.py # Entry point: full pipeline
+├── view_scores.py # Preview score_output.csv
+├── plot_distribution.py # Generate histogram
+├── requirements.txt # All dependencies
+├── README.md # This file
+└── analysis.md # Score distribution analysis
 
 
 ## ▶️ How to Run
