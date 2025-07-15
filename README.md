@@ -58,20 +58,23 @@ This logic ensures reliable users (who borrow responsibly and repay) are rewarde
 
 ## 📁 Project Structure
 credit-score/
+│
 ├── data/
-│ └── user_transactions.json # Input JSON transaction data
-├── score_output.csv # Final wallet scores
+│   └── user_transactions.json
+│
 ├── plots/
-│ └── score_distribution.png # Score histogram
+│   └── score_distribution.png
+│
 ├── src/
-│ ├── features.py # Feature engineering functions
-│ └── scoring.py # Rule-based scoring logic
-├── main.py # Entry point: full pipeline
-├── view_scores.py # Preview score_output.csv
-├── plot_distribution.py # Generate histogram
-├── requirements.txt # All dependencies
-├── README.md # This file
-└── analysis.md # Score distribution analysis
+│   ├── features.py
+│   └── scoring.py
+│
+├── main.py
+├── view_scores.py
+├── plot_distribution.py
+├── requirements.txt
+├── README.md
+└── analysis.md
 
 
 ## ▶️ How to Run
